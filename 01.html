@@ -3,40 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <link href="https://fonts.googleapis.com/css?family=Arvo|Lato" rel="stylesheet">
   <title>profile card</title>
   <style>
-    * {
-      Font-Family: 'Lato', Sans-Serif;
-      Font-Size: 16px;
+    p {
+      Font-Family: 'Lato', Sans-Serif; Font-Size: 16px;
+
     }
     .typeface__title-text {
-      Font-Family: 'Arvo', Serif;
-      Font-Size: 44px;
+      Font-Family: 'Arvo', Serif; Font-Size: 36px;
+      color: #4c4b16;
+    }
+    .main-frame {
+      max-width: 800px;
     }
     .card {
-      display: flex;
-      height: 300px;
       background-color: #f7f1e5;
+      max-height: 700px;
+      display: flex;
+      flex-flow: column wrap;
+      /* justify-content: flex-start; */
+      /* align-items: flex-start; */
+    }
+    .card-title-bar {
+      display: flex;
+      background-color: #e7b10a;
+      max-width: 350px;
+      padding: 1rem;
+    }
+    .card-main-text {
+      box-sizing: border-box;
+      justify-items: flex-start;
+      max-width: 160px;
     }
     .card-photo {
       box-sizing: border-box;
-      width: 100%;
-    }
-    .card-title-bar {
-
+      height: 700px;
+      object-fit: cover;
+      width: 400px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="photo"><img src="media/IMG_4278.jpeg" alt=""></div>
-    <div class="card-title-bar">
-
-    </div>
-    <div class="card-body">
-
+  <div class="main-frame">
+    <div class="card">
+      <div class="card-photo"><img class="card-photo" src="media/IMG_4278.jpeg" alt=""></div>
+      <div class="card card-title-bar">
+        <div class="typeface__title-text">Principal coffee roasteries around the world</div>
+      </div>
+      <div class="card card-main-text">
+        <p>On March 2, 2023, there are two types of businesses that dominate the coffee sector. Trading houses buy and process green beans directly from origin, while roasters produce the finished product under their own brand names or for distribution through sales agents and other buyers.</p>
+        <p>Over the past several years, particularly since 2000, there has been a trend towards consolidation and acquisition, as has been seen in the banking, airline, hotel chain, automobile manufacturing and brewery industries.</p>
+        <p>Producers and exporters, however, remain relatively small in fragmented market segments. That said, there are some large cooperatives that are both producers and exporters (e.g. Brazil).</p>
+        <p>Although the number of coffee trading houses and roasters is small, they account for a significant portion of the global coffee market. Some of them have market shares of more than 10%. Both have been led by European companies.</p>
+      </div>
     </div>
   </div>
 </body>
